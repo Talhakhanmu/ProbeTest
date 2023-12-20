@@ -1,0 +1,111 @@
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ff0000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  justify-content: center;
+  align-items: center;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.emoji {
+  height: 100px;
+  width: 100px;
+}
+.buttons-1 {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+.tabcontent {
+  align-items: center;
+}
+.feedback {
+  text-align: center;
+}
+.emoji {
+  font-size: 5rem;
+  margin: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.buttons button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #ffd700;
+}
