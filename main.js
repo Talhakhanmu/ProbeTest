@@ -1,5 +1,5 @@
 function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -13,8 +13,8 @@ function openCity(evt, cityName) {
 }
 
 function updateEmoji(mood) {
-  var emojiElement = document.getElementById("emoji");
-  var hiddenMsgElement = document.getElementById("hiddenMsg");
+  let emojiElement = document.getElementById("emoji");
+  let hiddenMsgElement = document.getElementById("hiddenMsg");
 
   if (mood === "good") {
     emojiElement.innerHTML = '<span style="font-size: 5rem;">😊</span>';

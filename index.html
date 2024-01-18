@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Feedback</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,120 +15,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <style>
-      .feedback {
-        text-align: center;
-      }
-      .emoji {
-        font-size: 5rem;
-        margin: 20px;
-      }
-      .buttons-1 {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-      }
-      .buttons-1 button {
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        cursor: pointer;
-      }
-      .hidden-msg {
-        display: none;
-        margin-top: 10px;
-        font-size: 1.2rem;
-      }
-    </style>
   </head>
-  <body class="container">
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">Home</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">
-        Give Feedback
-      </button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-        Contact
-      </button>
-    </div>
 
-    <div id="London" class="tabcontent">
-      <div class="container">
-        <h1>We are happy to receive feedback from you</h1>
+  <body>
+    <header>
+      <div class="header-new">
+        <a href="index.html">Home</a>
+        <a href="Feedback.html">Feedback</a>
       </div>
-    </div>
-
-    <div id="Paris" class="tabcontent">
-      <div class="feedback">
-        <h2>Feedback</h2>
-        <div id="emoji" class="emoji">😐</div>
-
-        <div class="buttons-1">
-          <button
-            onclick="updateEmoji('good')"
-            type="button"
-            class="btn btn-primary"
-          >
-            Good
-          </button>
-
-          <button
-            onclick="updateEmoji('bad')"
-            type="button"
-            class="btn btn-danger"
-          >
-            Bad
-          </button>
-        </div>
-
-        <div id="hiddenMsg" class="hidden-msg"></div>
-
-        <div class="rating">
-          <input type="radio" id="star5" name="rating-1" value="5" /><label
-            for="star5"
-            >&#9733;</label
-          >
-          <input type="radio" id="star4" name="rating-1" value="4" /><label
-            for="star4"
-            >&#9733;</label
-          >
-          <input type="radio" id="star3" name="rating-1" value="3" /><label
-            for="star3"
-            >&#9733;</label
-          >
-          <input type="radio" id="star2" name="rating-1" value="2" /><label
-            for="star2"
-            >&#9733;</label
-          >
-          <input type="radio" id="star1" name="rating-1" value="1" /><label
-            for="star1"
-            >&#9733;</label
-          >
-        </div>
-      </div>
-    </div>
-
-    <div id="Tokyo" class="tabcontent">
-      <h3>Contact:</h3>
-      <p>E:Mail: ABS@xyz.com</p>
-      <p>Adress: absstrasse 12 , 8051 Zürich</p>
-      <p>Telephone: 078 123 4567</p>
-    </div>
+    </header>
+    <main>
+      <h1>We are happy to receive your Feedback</h1>
+    </main>
 
     <footer>
+      <div class="contact">
+        <p>Kontact us:</p>
+        <p>Telephone: +41 78 123 4567</p>
+        <p>E-mail Adresse:info@example.com</p>
+      </div>
       <div class="footer">
-        <div class="socials">
-          <i
-            class="fa fa-instagram"
-            style="font-size: 2rem; color: rgb(0, 0, 0)"
-          ></i>
-          <i
-            class="fa fa-youtube"
-            style="font-size: 2rem; color: rgb(5, 0, 0)"
-          ></i>
-          <i
-            class="fa fa-twitter"
-            style="font-size: 2rem; color: rgb(0, 0, 0)"
-          ></i>
+        <div class="socials SocialMEdiaIcons">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-twitter"></i>
         </div>
       </div>
     </footer>
